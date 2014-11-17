@@ -14,7 +14,6 @@ class BackboneTest.Views.HogeView extends Backbone.View
     "change input": "inputCange"
 
   inputCange: () ->
-      console.log "aaaaa"
       @model.set("age", @$("input").val())
 
   initialize: () ->
