@@ -1,11 +1,13 @@
 'use strict';
 
 class BackboneTest.Models.HogeModel extends Backbone.Model
-  url: '',
+  url: ''
 
   initialize: () ->
 
-  defaults: {}
+  defaults:
+    name: ""
+    age: ""
 
   validate: (attrs, options) ->
 

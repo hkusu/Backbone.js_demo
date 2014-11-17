@@ -10,7 +10,12 @@ class BackboneTest.Views.HogeView extends Backbone.View
 
   className: ''
 
-  events: {}
+  events:
+    "change input": "inputCange"
+
+  inputCange: () ->
+      console.log "aaaaa"
+      @model.set("age", @$("input").val())
 
   initialize: () ->
     @listenTo @model, 'change', @render
