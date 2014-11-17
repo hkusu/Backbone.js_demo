@@ -12,7 +12,7 @@ window.BackboneTest =
         age: 31
     )
 
-    view = new@Views.HogeView(
+    view = new @Views.HogeView(
       el: $("#hoge")
       model: model
     )
